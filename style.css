@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: cursive;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+nav{
+    height: 7%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: white;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+}.part1 > h3:hover{
+    color: rosybrown;
+    cursor: pointer;
+}
+.part1 .logo{
+    height: 45px;
+    width: 45px; 
+    background-image: url(logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search_bar{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    background-color: rgba(128, 128, 128, 0.39);    
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    &:hover{
+        width: 300px;
+    }
+}
+.search_bar > i{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 800;
+    &:hover{
+        color: rosybrown;
+    }
+}
+.part2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.part2 > h4{
+    font-size: 12px;
+}
+.part2 .btn2, button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+.part2 > i{
+    font-size: 18px;
+    cursor: pointer;
+    &:hover{
+        color: rosybrown;
+    }
+}
+.content_area{
+    height: 40%;
+    width: 40%;
+    margin-top: 2%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: fantasy;
+    color: whitesmoke;  
+}
+.content_area > h1{
+    font-weight: 700;
+    height: 45%;
+    line-height: 120px;
+    font-size: 8rem;
+    margin-top: 2%;
+}
+.content_area .cover{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 1%;
+    top: 15%;
+    border-radius: 50%;
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #ff0000;
+}
+.content_area .cover::before{
+    content: "50%";
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: rotate(-20deg);
+}
+.content_area2{
+    height: 10%;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content_area2 > p{
+    font-size: 20px;
+}
+.content_imgone{
+    height: 80%;
+    width: 28%;
+    left: 1%;
+    bottom: 10%;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(women\ clothing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content_imgtwo{
+    height: 80%;
+    width: 28%;
+    right: 1%;
+    bottom: 10%;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(mens\ clothing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content_imgthree{
+    position: absolute;
+    bottom: 10%;
+    height: 27%;
+    width: 40%;
+    background-image: url(unisex\ fashin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.footer{
+    position: relative;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    height: 9%;
+    width: 100%;
+    color: black;
+}
+.footer > h3{
+    border-radius: 10px ;
+    padding: 10px 20px;
+    background-color: white;
+}
